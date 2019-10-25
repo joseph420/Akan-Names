@@ -1,3 +1,6 @@
+# PROJECT NAME
+### Akan names
+
 # AUTHOR NAME
 ### Joseph Muturi
 
