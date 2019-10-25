@@ -1,4 +1,4 @@
-var maleAkanName = [
+const maleAkanNames = [
  "Kwasi",
 "Kwadwo",
 "Kwabena",
@@ -6,7 +6,7 @@ var maleAkanName = [
 "Yaw",
 "Kofi",
   ];
-  var femaleAkanName = [
+  const femaleAkanName = [
 "Akosua",
 "Adwoa",
 "Abenaa",
@@ -24,3 +24,11 @@ var maleAkanName = [
 "Friday",
 "Saturday",
   ];
+  function akan(){
+      
+    var name = document.getElementById("yourNames").value;
+     gender= document.getElementById("Gender").value;
+    var yearBorn = parseInt(document.getElementById("yearborn").value);
+   
+    
+};      
