@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("canon.jpg");
+    background-size:cover;
+    background-position: center center;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+input,label{
+    display: block;
+}
+form{
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+}
+* {
+    box-sizing: border-box;
+  }
+
+  
