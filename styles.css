@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url("canon.jpg");
+    background-image: url("images/tribal.jpg");
     background-size:cover;
     background-position: center center;
     font-family: sans-serif;
@@ -10,6 +10,7 @@ body{
     
     
 }
+
 input,label{
     display: block;
 }
