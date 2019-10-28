@@ -45,23 +45,23 @@
                         <div class="card-body">
                           <form class="needs-validation" novalidate id="myform">
                             <div class="form-group">
-                              <label for="year">Enter year you were born</label>
+                              <label for="year">year</label>
                               <input
                               type="number"
                               min="1900"
                               max="2019"
                               class="form-control"
                               id="year"
-                              placeholder="Example 1964"
                               value=""
                               required
                             />
+                             
                               <div class="invalid-feedback">
                                 Enter a valid year
                               </div>
                             </div>
                             <div class="form-group">
-                              <label for="monthID">Select Month:</label>
+                              <label for="monthID">month:</label>
                               <select class="form-control" id="monthID" required>
                                 <option value="">Enter month</option>
                                 <option value="1">1</option>
@@ -82,17 +82,17 @@
                               </div>
                             </div>
                             <div class="form-group">
-                              <label for="dateID">Enter day</label>
+                              <label for="dateID">Day</label>
                               <input
                                 type="number"
                                 min="1"
                                 max="31"
                                 class="form-control"
                                 id="dateID"
-                                placeholder="Example 12"
                                 value=""
                                 required
                               />
+                              
                               <div class="invalid-feedback">
                                 Enter a valid day
                               </div>
@@ -125,34 +125,34 @@
                             <a href="#enter-details">
                                 <button
                                   type="button"
-                                  class="btn bg-success"
                                   onClick="onSubmit()"
-                                >
-                            <br /> 
-                            <br />
-                           
-                                Submit
-                              </button>
-                            </a>
-                            <button
-                              type="button"
-                              class="btn btn-danger float-right"
-                              onClick="clearForm()"
-                            >
+                                  >
                             
-                            *refresh
-                            </button>
-                          </form>
+                              <br />
+                             
+                                  Submit
+                                </button>
+                              </a>
+                              <button
+                                type="button"
+                                onClick="clearForm()"
+                                >
+                                
+                              
+                                 refresh
+                              </button>
+                            </form>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                    
                   
-                
-   
-    <script src="script.js"></script> 
-   
-    
-    
-</body>
-</html>
+     
+      <script src="script.js"></script> 
+     
+      
+      
+  </body>
+  </html>
+                              
