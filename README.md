@@ -15,7 +15,12 @@
 - javascript
 
 # BDD
-### 
+- Enter valid year you were born in
+- Enter  valid month 
+- Enter valid day
+- Choose your gender
+- Lastly press the submit button to recieve your akan name
+- Press the refresh button to clear the form
 
 
 # SETUP INSTRUCTIONS
