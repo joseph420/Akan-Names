@@ -4,14 +4,19 @@
 # AUTHOR NAME
 ### Joseph Muturi
 
+# DESCRIPTION
+### A web application that takes a user's birthday date and calculates the day of the week which they were born depending on their gender
+
+
 # LANGUAGE USED
 - html
 - css
 - bootstrap
 - javascript
 
-# DESCRIPTION
-### A web application that takes a user's birthday date and calculates the day of the week which they were born depending on their gender
+# BDD
+### 
+
 
 # SETUP INSTRUCTIONS
 ### - Open github account,open terminal on your local machine,open any browser,use your visual studio
