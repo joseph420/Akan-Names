@@ -19,6 +19,9 @@
 # KNOWN BUGS
 ### My website may not be responsive to other devices but is still under inovation
 
+# LINK
+### 
+
 # CONTACT DETAILS
 ### Contact Joseph at - cr.muturi@gmail.com
 - 0705977046
