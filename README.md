@@ -33,7 +33,8 @@
 ### https://joseph420.github.io/Akan-Names
 
 # CONTACT DETAILS
-### Contact Joseph at - cr.muturi@gmail.com
+### Contact Joseph at 
+- cr.muturi@gmail.com
 - 0705977046
 
 # LICENCE
