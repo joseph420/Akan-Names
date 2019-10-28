@@ -23,55 +23,133 @@
                     <a href="#enter-details"><h5 id="start">KNOW YOUR AKAN NAME</h5></a>
                    <div id="enter-details"></div>
 
-        </div>
-                <div class="col-4" >
-                <form>
-                
-                                
-                    <label for="day">Day of Birth</label>
-                    <input type="number" id="day" min="1" max="31" placeholder="DD"><br>
-                    <label for="month">Month of Birth</label>
-                    <input type="number" id="month" min="1" max="12" placeholder="MM">
-                    <label for="year">Year of Birth</label>
-                    <input type="text" id="year" placeholder="YYYY">                                    <p>Gender</p>
-                    <label for="male">Male</label>
-                    <input type="radio" id="male" name="gender">
-                    <label for="female">Female</label>
-                    <input type="radio" id="female" name="gender">
-                               
-                                 
-             </form> 
-            <form>
-         </div>
-                
-     <div class="card-body" id="results-card">
-                      <form class="Your AKAN Information is..." id="answer" action="index.html" method="post">
-                        <div class="form-group">
-                                <div class="form-group">
-                    
-                                <button type="button" onclick="giveName();selectGender();giveYear();giveMonth();giveDay();validYear();validDay();getName(); class="btn btn-outline-success">Submit</button>
-                            </div>  
-                          <input type="textarea" name="output" id="output">
-                        </div>
-                        <div class="card-body" id="results-card">
-                            <form class="Your AKAN Information is..." id="answer" action="index.html" method="post">
-                              <div class="form-group">
+       
+                   <div class="container" id="output">
+                    <div class="alert alert-success" role="alert">
+                      Hello! You were born on <span id="day"></span> and your Akan name is
+                      <span id="name"></span>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="alert"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="input-section">
+                    <div class="card">
+                      <div class="card-title">
+                    <h></h>
+                        <div class="card-body">
+                          <form class="needs-validation" novalidate id="myform">
+                            <div class="form-group">
+                              <label for="year">Enter year you were born</label>
+                              <input
+                              type="number"
+                              min="1900"
+                              max="2019"
+                              class="form-control"
+                              id="year"
+                              placeholder="Example 1964"
+                              value=""
+                              required
+                            />
+                              <div class="invalid-feedback">
+                                Enter a valid year
                               </div>
-                              <div class="form-group">
-                               <button type="button" class="btn btn-outline-primary" onclick="clearForm()" name="button">Click here to reset</button>
-                             </div>
-                     <script src="scripts.js"></script>
-                       
-            </div>
-        </div>
-    </div>
-  </form>
-</div>
-</div>
-</div>
-
- </form>
+                            </div>
+                            <div class="form-group">
+                              <label for="monthID">Select Month:</label>
+                              <select class="form-control" id="monthID" required>
+                                <option value="">Enter month</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                Enter a valid month
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="dateID">Enter day</label>
+                              <input
+                                type="number"
+                                min="1"
+                                max="31"
+                                class="form-control"
+                                id="dateID"
+                                placeholder="Example 12"
+                                value=""
+                                required
+                              />
+                              <div class="invalid-feedback">
+                                Enter a valid day
+                              </div>
+                            </div>
+                            <div class="form-check-inline">
+                              <label class="form-check-label">
+                                <input
+                                  type="radio"
+                                  class="form-check-input"
+                                  name="gender"
+                                  id="maleID"
+                                  value="male"
+                                  required
+                                />Male
+                              </label>
+                            </div>
+                            <div class="form-check-inline">
+                              <label class="form-check-label">
+                                <input
+                                  type="radio"
+                                  class="form-check-input"
+                                  name="gender"
+                                  id="femaleID"
+                                  value="female"
+                                  required
+                                />Female
+                              </label>
+                            </div>
+                            <br /> 
+                            <br />
+                            <a href="#enter-details">
+                              <button
+                                type="button"
+                                class="btn bg-success"
+                                onClick="onSubmit()"
+                              >
+                                Submit
+                              </button>
+                            </a>
+                            <button
+                              type="button"
+                              class="btn btn-danger float-right"
+                              onClick="clearForm()"
+                            >
+                              Clear
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
                 
-
-    </body>
+   
+    <script src="js/custom.js"></script> 
+   
+    
+    
+</body>
 </html>
