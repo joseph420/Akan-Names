@@ -20,7 +20,7 @@
 ### My website may not be responsive to other devices but is still under inovation
 
 # LINK
-### 
+### https://joseph420.github.io/Akan-Names
 
 # CONTACT DETAILS
 ### Contact Joseph at - cr.muturi@gmail.com
