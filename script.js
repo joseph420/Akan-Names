@@ -1,36 +1,13 @@
-const maleAkanNames = [
- "Kwasi",
-"Kwadwo",
-"Kwabena",
-"Kwaku",
-"Yaw",
-"Kofi",
-  ];
-  const femaleAkanName = [
-"Akosua",
-"Adwoa",
-"Abenaa",
-"Akua",
-"Yaa",
-"Afua",
-"Ama",
-  ];
-  var daysOfTheWeek = [
-"Sunday",
-"Monday",
-"Tuesday",
-"Wednesday",
-"Thursday",
-"Friday",
-"Saturday",
-  ];
-  function akan(){
-      
-    var name = document.getElementById("yourNames").value;
+/*var male = ["kwasi", "kwadwo", "kwabena", "kwaku","Yaw", "Kofi", "Kwame"];
+var female = ["Akousa", "Adwoa", "Abeana","Akua", "Yaa", "Afua", "Ama"];
+var dayWeek = ["Sunday", "Monday", "Tuesday","Wensday","Thursday", "Friday", "Saturday"];
+var gender;
+function akan(){
+     var dayBorn = parseInt(document.getElementById("dayBorn").value);
+     var monthBorn = document.getElementById("monthBorn").value;
+     var yearBorn = parseInt(document.getElementById("yearborn").value);
      gender= document.getElementById("Gender").value;
-    var yearBorn = parseInt(document.getElementById("yearborn").value);
-   
-    
+     var results = document.getElementById("results").value;
 };      
 var dayWeek = new Date(year + "/" + month + "/" + day);
 var d = dayWeek.getDay();
@@ -42,17 +19,9 @@ else{
     name = female[d];
 }
 alert("Your were born on "+ dayWeek[d] +  " and your Akan name is " +name );
-
+*/
 var currentDate = new Date();
 var currentYear = currentDate.getFullYear();
-
-function giveName() {
-  var name = document.getElementById("yourNames").value;
-  if (name == "") {
-    alert("Name is required");
-    return false;
-  }
-}
 
 function giveDay() {
   var day = document.getElementById("dayBorn").value;
@@ -60,7 +29,23 @@ function giveDay() {
     alert("Day must be filled ");
     return false;
   }
-}
+
+  function giveMonth() {
+    var month = document.getElementById("monthBorn").value;
+    if (month == "0") {
+      alert("Month must be selected");
+      return false;
+    }
+  }
+  
+  function giveYear() {
+    var year = document.getElementById("yearBorn").value;
+    if (year == "") {
+      alert("Year must be filled out");
+      return false;
+    }
+  }
+
 
 function selectGender() {
   var gender = document.getElementById("gender").value;
@@ -68,23 +53,7 @@ function selectGender() {
     alert("selecte gender");
     return false;
   }
-
 }
-
-function giveYear() {
-  var year = document.getElementById("yearBorn").value;
-  if (year == "") {
-    alert("Year must be filled out");
-    return false;
-  }
-}
-
-function giveMonth() {
-  var month = document.getElementById("monthBorn").value;
-  if (month == "0") {
-    alert("Month must be selected");
-    return false;
-  }
 
 }
 // function that restrict users from not keying in different numbers on letters and number section
@@ -107,10 +76,9 @@ function validYear(){
 
 function validDay(){
   var oddMonths = [1, 3, 5, 7, 9, 10, 12];
-  var monthNumber = parseInt(document.getElementById("monthBorn").value);
   var dayNumber = parseInt(document.getElementById("dayBorn").value);
+  var monthNumber = parseInt(document.getElementById("monthBorn").value);
   var yearNumber = parseInt(document.getElementById("yearBorn").value);
-  var yearNumber = parseInt(document.getElementById("centuryBorn").value);
   var a = yearNumber % 100;
   var b = yearNumber % 400;
   var c = yearNumber % 4;
@@ -134,36 +102,9 @@ function validDay(){
 }
 
 function getName(){
-  var days = [
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Sutarday",
-  ];
-  var akanMale = [
-    "Kwasi",
-    "Kwadwo",
-    "Kwabena",
-    "Kwaku",
-    "Yaw",
-    "Kofi",
-    "Kwame",
-
-  ];
-
-  var akanFemale = [
-    "Akosua",
-    "Adwoa",
-    "Abenaa",
-    "Akua",
-    "Yaa",
-    "Afua",
-    "Ama",
-  ];
-  var cc = parseInt(document.getElementById("centuryBorn").value.slice(0, 2));
+  var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  var akanMale = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+  var akanFemale = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
   var yy = parseInt(document.getElementById("yearBorn").value.slice(2, 4));
   var dd = parseInt(document.getElementById("dayBorn").value);
   var mm = parseInt(document.getElementById("monthBorn").value);
@@ -230,5 +171,13 @@ function getName(){
         return true;
       }
     }
+}
+function clearForm(){
+  document.getElementById("form").reset();
+}
 
 
+
+
+
+ 
